@@ -131,7 +131,7 @@
   border: none;
 }
 
-.recipe__video-caption {
+.recipes__video-caption {
   display: flex;
   justify-content: space-between;
   margin: 24px 0 215px;
