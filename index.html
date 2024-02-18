@@ -53,7 +53,7 @@
         </p>
 
         <img
-          src="/images/inside_coffee_shop.png"
+          src="images/inside_coffee_shop.png"
           alt="Triple Peaks Cafe"
           class="header__image"
         />
@@ -76,8 +76,8 @@
             Check out some recipes we've collected for your home-brewing
             convience:
           </p>
-          <div class="recipes__videos">
-            <div>
+          <ul class="recipes__videos">
+            <li>
               <iframe
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=3Lv1FwYMpbjYnv19"
                 title="YouTube video player"
@@ -89,8 +89,8 @@
               <p class="recipes__video-caption">
                 <span>Areopress recipe</span>~5 min
               </p>
-            </div>
-            <div>
+            </li>
+            <li>
               <iframe
                 src="https://www.youtube.com/embed/st571DYYTR8?si=9IB9C862IsNTWTgp"
                 title="YouTube video player"
@@ -102,8 +102,8 @@
               <p class="recipes__video-caption">
                 <span>French press recipe</span> ~15 min
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </section>
         <section id="booking-page" class="reservation">
           <h2 class="reservation__title">Book a table</h2>
@@ -114,6 +114,7 @@
                   type="text"
                   class="form__input"
                   placeholder="Name Surname"
+                  required
                 />
               </label>
               <label class="form__label">
@@ -121,22 +122,28 @@
                   type="number"
                   class="form__input"
                   placeholder="1-8"
+                  required
                 />
               </label>
               <label class="form__label">
-                Date & time *<input type="datetime-local" class="form__input" />
+                Date & time *<input
+                  type="datetime-local"
+                  class="form__input"
+                  required
+                />
               </label>
               <label class="form__label">
                 Your email *<input
                   type="email"
                   class="form__input"
                   placeholder="email@email.com"
+                  required
                 />
               </label>
             </fieldset>
-            <button class="form__button">Book a table</button>
+            <button type="submit" class="form__button">Book a table</button>
             <label class="form__label form__label_type_checkbox">
-              <input type="checkbox" class="form__checkbox" />
+              <input type="checkbox" class="form__checkbox" required />
               I agree with terms of use
             </label>
           </form>
@@ -217,7 +224,7 @@
         </section>
         <section class="about">
           <div class="about__circle"></div>
-          <div class="about__circle about__circle-animation-blurred"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
           <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -237,13 +244,11 @@
       </main>
       <footer id="contacts-page" class="footer">
         <div class="footer__content">
-          <div>
-            <img
-              src="./images/logo_coffeeshop_light.svg"
-              alt="Triple Peaks logo"
-              class="footer__logo"
-            />
-          </div>
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Triple Peaks logo"
+            class="footer__logo"
+          />
           <div class="footer__column">
             <h3 class="footer__social-heading">Social media</h3>
             <ul class="footer__list">

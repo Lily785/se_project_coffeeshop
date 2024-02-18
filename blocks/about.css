@@ -34,7 +34,7 @@
   left: -129px;
 }
 
-.about__circle-animation-blurred {
+.about__circle_animation_blurred {
   animation: pulsate 1.3s ease-in-out infinite backwards 0s;
 }
 
@@ -62,4 +62,5 @@
   font-size: 20px;
   line-height: 30px;
   color: #fff;
+  margin: 0;
 }
